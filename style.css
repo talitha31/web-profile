@@ -1,0 +1,22 @@
+.logo {
+    width: 140px;
+}
+
+.navbar-light .navbar-nav .nav-link.active{
+    color: #E88989;
+}
+
+.navbar-light .navbar-nav .nav-link.active:hover{
+    color: #000000;
+}
+
+.btn-outline-danger {
+    color: #E88989;
+    border-color: #E88989;
+}
+
+.btn-outline-danger:hover {
+    color: #fff;
+    background-color: #E88989;
+    border-color: #E88989;
+}
