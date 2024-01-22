@@ -17,9 +17,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded-pill position-sticky m-4 col-11 mx-auto">
-        <div class="container-fluid">
-            <img src="assets/logo-talitha.png" class="logo" alt="">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded-pill position-fixed m-3" style="width: 97.7%;">
+        <div class="container-fluid px-4">
+            <a href="#home"><img src="assets/logo-talitha.png" class="logo" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -31,23 +31,214 @@
                         <a class="nav-link active fw-bold" aria-current="page" href="#about">about</a>
                     </li>
                     <li class="nav-item px-5">
-                        <a class="nav-link active fw-bold" aria-current="page" href="#skill">skill</a>
+                        <a class="nav-link active fw-bold" aria-current="page" href="#skills">skills</a>
                     </li>
                     <li class="nav-item px-5">
-                        <a class="nav-link active fw-bold" aria-current="page" href="#portfolio">portfolio</a>
+                        <a class="nav-link active fw-bold" aria-current="page" href="#portfolios">portfolios</a>
                     </li>
                 </ul>
 
-                <a href="" class="btn btn-outline-danger rounded-pill fw-bold">contact</a>
+                <a href="#contact" class="btn btn-outline-danger rounded-pill fw-bold">contact</a>
             </div>
         </div>
     </nav>
 
-    <div>
-        <div>
-            <h4>Hi! <br> I'm Talitha Olga</h4>
+    <div class="section1 d-flex flex-column align-items-center justify-content-center vh-100" id="home">
+        <div class="d-flex flex-column align-items-center justify-content-center">
+            <h1 class="fw-bold text-danger">Hi, <br> I'm Talitha Olga!</h1>
+            <p class="text-danger">Front-End Developer</p>
         </div>
     </div>
+
+    <div class="section2 rounded pb-5" id="about">
+        <div class="d-flex justify-content-center align-items-center pt-5">
+            <div class="col-6">
+                <h3 class="text-danger fw-bold">About me</h3>
+                <p class="col-9 mt-4" style="text-align: justify;">
+                    Hi, I'm Talitha Olga Ramadhani. You can call me Talitha. I'm currently in my 4th semester of
+                    the Bachelor of Informatics at Dian Nuswantoro University. I'm interested in Data Science and
+                    Artificial Intelligence. I'm attending this workshop to fill my free time during the semester break,
+                    and to improve my skills in front-end coding.
+                </p>
+            </div>
+            <img src="assets/photo-talitha.png" class="flex-shrink-0 img-fluid py-5" style="width: 20%" alt="">
+        </div>
+
+        <div class="achievements pb-5">
+            <h5 class="text-danger fw-bold text-center">Achievements</h5>
+            <div class="container text-center mt-5">
+                <div class="row">
+                    <div class="col">
+                        <div class="col d-flex flex-column justify-content-center align-items-center">
+                            <img src="assets/certificate-dncc.png" alt="" class="img-fluid">
+                            <p class="mt-2">Basic Training for Next Generation<br><b>1st best project for data
+                                    analyst</b></p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col d-flex flex-column justify-content-center align-items-center">
+                            <img src="assets/certificate-woles.png" alt="" class="img-fluid">
+                            <p class="mt-2">Programmer Males<br><b>1 of the best web for personal profile</b></p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col d-flex flex-column justify-content-center align-items-center">
+                            <img src="assets/certificate-markoding.png" alt="" class="img-fluid">
+                            <p class="mt-2">Markoding X UNICEF Indonesia<br><b>1 of 40 ideas that won a 2021 DIC
+                                    Bootcamp Scholarship</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section3 rounded py-5" id="skills">
+        <h3 class="fs-4 text-danger mt-5 fw-bold d-flex justify-content-center py-5">My skills</h3>
+        <div class="container text-center pb-5">
+            <div class="row d-flex justify-content-center">
+                <div class="col-4 p-5 skill w-25 rounded-4">
+                    <p class="fw-bold text-danger fs-5">Front End</p>
+                    <p>Create a responsive web</p>
+                    <img src="assets/front-end.png" style="width: 70%" alt="" class="img-fluid mt-4">
+                </div>
+                <div class="col-4 ms-3 p-5 skill  w-25 rounded-4">
+                    <p class="fw-bold text-danger fs-5">Back End</p>
+                    <p>Create an API</p>
+                    <img src="assets/back-end.png" alt="" class="img-fluid mt-4">
+                </div>
+                <div class="col-4 ms-3 p-5 skill w-25 rounded-4">
+                    <p class="fw-bold text-danger fs-5">Data Science</p>
+                    <p>Collect, clean, and analyze data</p>
+                    <img src="assets/data-science.png" style="width: 40%" alt="" class="img-fluid mt-4">
+                </div>
+                <div class="col-4 mt-3 p-5 skill w-25 rounded-4">
+                    <p class="fw-bold text-danger fs-5">UI Design</p>
+                    <p>Create an attractive UI design</p>
+                    <img src="assets/ui-design.png" style="width: 60%" alt="" class="img-fluid mt-4">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section4 vh-100 rounded pt-5" id="portfolios">
+        <h3 class="fs-4 text-danger mt-5 fw-bold d-flex justify-content-center py-5">My portfolios</h3>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active d-flex justify-content-center">
+                    <div class="card w-50 ">
+                        <img src="assets/project-evoku.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <p>
+                                <button class="btn btn-outline-danger rounded-pill fw-bold w-100" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
+                                    aria-controls="collapseExample">
+                                    E-Voku | E-Voting Kampus UDINUS
+                                </button>
+                            </p>
+                            <div class="collapse" id="collapseExample">
+                                <div class="card card-body">
+                                    E-Voku is a digital voting platform for Udinus University. It aims to make voting
+                                    faster, more efficient, and more secure.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item d-flex justify-content-center">
+                    <div class="card w-50 ">
+                        <img src="assets/project-woles.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <p>
+                                <button class="btn btn-outline-danger rounded-pill fw-bold w-100" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
+                                    aria-controls="collapseExample">
+                                    Personal Profile Website
+                                </button>
+                            </p>
+                            <div class="collapse" id="collapseExample">
+                                <div class="card card-body">
+                                    Personal Profile Website is a place where I can share information about myself, my
+                                    skills, my portfolio, and my contact information.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item d-flex justify-content-center">
+                    <div class="card w-50 ">
+                        <img src="assets/project-markoding.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <p>
+                                <button class="btn btn-outline-danger rounded-pill fw-bold w-100" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
+                                    aria-controls="collapseExample">
+                                    mysoul
+                                </button>
+                            </p>
+                            <div class="collapse" id="collapseExample">
+                                <div class="card card-body">
+                                    mysoul is a digital platform that provides a safe space for users to share their
+                                    stories and concerns anonymously. We also offer psychological features that allow
+                                    users to connect with experts directly.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev type=" button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                <span class="text-dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                        <path
+                            d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                    </svg>
+                    </i></span>
+            </button>
+            <button class="carousel-control-next type=" button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="text-dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path
+                            d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                    </svg>
+                </span>
+            </button>
+        </div>
+    </div>
+
+    <div class="section5" id="contact">
+        <h5 class="fw-bold text-center text-danger mt-5">Contact</h5>
+        <div class="container text-center p-5">
+            <div class="row">
+                <div class="col d-flex flex-column align-items-center justify-content-center">
+                    <a href="https://www.instagram.com/talithaa____/"
+                        class="btn btn-outline-danger rounded-pill fw-bold"><img src="assets/logo-instagram.png"
+                            class="mx-2" alt="" style="width: 5%;">LinkedIn</a>
+                </div>
+                <div class="col d-flex flex-column align-items-center justify-content-center">
+                    <a href="https://www.linkedin.com/in/talithaolga/"
+                        class="btn btn-outline-danger rounded-pill fw-bold"><img src="assets/logo-linkedin.png"
+                            class="mx-2" alt="" style="width: 5%">LinkedIn</a>
+                </div>
+                <div class="col d-flex flex-column align-items-center justify-content-center">
+                    <a href="https://github.com/talitha31/" class="btn btn-outline-danger rounded-pill fw-bold"><img
+                            src="assets/logo-github.png" class="mx-2" alt="" style="width: 5%;">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light">
+        <p class="text-danger fw-semibold d-flex justify-content-center p-3 mb-0">
+            Made with love by Talitha Olga Ramadhani © 2024
+        </p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
